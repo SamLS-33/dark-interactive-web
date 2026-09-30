@@ -213,3 +213,269 @@ main {
 
     min-height: 20px;
 }
+/* =========================
+   SECCIÓN DE DATOS
+   ========================= */
+
+.data-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #050a14;
+    border: 1px solid #12345c;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 80, 160, 0.15);
+}
+
+.data-container h2 {
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #8da2bd;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FORMULARIO
+   ========================= */
+
+#dataForm {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+/* =========================
+   SELECT
+   ========================= */
+
+#dataForm select {
+    width: 100%;
+    padding: 12px;
+    background-color: #080f1c;
+    color: white;
+    border: 1px solid #1b4f85;
+    border-radius: 6px;
+    outline: none;
+}
+
+#dataForm select:focus {
+    border-color: #2684ff;
+    box-shadow: 0 0 8px rgba(38, 132, 255, 0.35);
+}
+
+
+/* =========================
+   RESULTADO
+   ========================= */
+
+.result-card {
+    display: none;
+    margin-top: 30px;
+    padding: 25px;
+    text-align: center;
+
+    background-color: #030811;
+    border: 1px solid #12345c;
+    border-radius: 12px;
+
+    box-shadow:
+        0 0 15px rgba(0, 100, 200, 0.15),
+        inset 0 0 15px rgba(0, 100, 200, 0.05);
+}
+
+.result-card.show {
+    display: block;
+}
+
+
+/* =========================
+   SÍMBOLO DEL RESULTADO
+   ========================= */
+
+.result-symbol {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 1;
+
+    color: #4da6ff;
+
+    text-shadow:
+        0 0 8px #2684ff,
+        0 0 20px #2684ff,
+        0 0 40px rgba(38, 132, 255, 0.5);
+
+    animation: symbolAppear 0.6s ease-out,
+               symbolGlow 2s ease-in-out infinite;
+}
+
+
+/* =========================
+   ANIMACIÓN DE APARICIÓN
+   ========================= */
+
+@keyframes symbolAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.3) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+/* =========================
+   ANIMACIÓN DE BRILLO
+   ========================= */
+
+@keyframes symbolGlow {
+
+    0%,
+    100% {
+        text-shadow:
+            0 0 8px #2684ff,
+            0 0 20px #2684ff,
+            0 0 40px rgba(38, 132, 255, 0.5);
+    }
+
+    50% {
+        text-shadow:
+            0 0 12px #2684ff,
+            0 0 30px #2684ff,
+            0 0 55px rgba(38, 132, 255, 0.7);
+    }
+}
+
+
+/* =========================
+   TEXTO DEL RESULTADO
+   ========================= */
+
+.result-card h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.result-card p {
+    color: #8da2bd;
+}
+ /* Quitar flechas nativas de los campos numéricos */
+
+#dataForm input[type="number"]::-webkit-inner-spin-button,
+#dataForm input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#dataForm input[type="number"] {
+    appearance: textfield;
+}
+/* =========================
+   SECCIÓN DEL CORAZÓN
+   ========================= */
+
+.heart-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heart-description {
+    color: #8da2bd;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   ESCENA 3D
+   ========================= */
+
+.heart-scene {
+    width: 100%;
+    height: 500px;
+
+    background-color: #02060d;
+
+    border: 1px solid #12345c;
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 20px rgba(0, 80, 160, 0.15),
+        inset 0 0 30px rgba(0, 40, 100, 0.15);
+}
+
+
+/* =========================
+   CONTROLES
+   ========================= */
+
+.heart-controls {
+    margin-top: 25px;
+}
+
+.heart-controls p {
+    margin-bottom: 12px;
+    color: #8da2bd;
+}
+
+.color-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.heart-color-button {
+    padding: 10px 22px;
+
+    background-color: #080f1c;
+    color: white;
+
+    border: 1px solid #1b4f85;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.heart-color-button:hover {
+    border-color: #2684ff;
+
+    box-shadow:
+        0 0 10px rgba(38, 132, 255, 0.35);
+}
+
+.heart-color-button.active {
+    background-color: #0b1d35;
+
+    border-color: #2684ff;
+
+    box-shadow:
+        0 0 12px rgba(38, 132, 255, 0.3);
+}
+
+
+/* =========================
+   INSTRUCCIONES
+   ========================= */
+
+.heart-instruction {
+    margin-top: 20px;
+
+    color: #627994;
+    font-size: 14px;
+}

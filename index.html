@@ -35,76 +35,164 @@
         </section>
 
 
-<section id="login" class="section">
+        <section id="login" class="section">
 
-    <div class="login-container">
+            <div class="login-container">
 
-        <h2>Iniciar sesión</h2>
+                <h2>Iniciar sesión</h2>
 
-        <form id="loginForm">
+                <form id="loginForm">
 
-            <div class="input-group">
-                <label for="username">Usuario</label>
+                    <div class="input-group">
+                        <label for="username">Usuario</label>
 
-                <input
-                    type="text"
-                    id="username"
-                    placeholder="Escribe tu usuario"
-                    required
-                >
+                        <input type="text" id="username" placeholder="Escribe tu usuario" required>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="password">Contraseña</label>
+
+                        <input type="password" id="password" placeholder="Escribe tu contraseña" required>
+                    </div>
+
+
+                    <button type="submit" class="main-button">
+                        Iniciar sesión
+                    </button>
+
+                </form>
+
+
+                <p id="loginMessage"></p>
+
+
+                <p class="register-text">
+                    ¿No tienes una cuenta?
+                </p>
+
+                <button id="registerButton" class="secondary-button">
+                    Registrarse
+                </button>
+
             </div>
 
-
-            <div class="input-group">
-                <label for="password">Contraseña</label>
-
-                <input
-                    type="password"
-                    id="password"
-                    placeholder="Escribe tu contraseña"
-                    required
-                >
-            </div>
-
-
-            <button type="submit" class="main-button">
-                Iniciar sesión
-            </button>
-
-        </form>
-
-
-        <p id="loginMessage"></p>
-
-
-        <p class="register-text">
-            ¿No tienes una cuenta?
-        </p>
-
-        <button id="registerButton" class="secondary-button">
-            Registrarse
-        </button>
-
-    </div>
-
-</section>
+        </section>
 
 
         <section id="datos" class="section">
-            <h2>Datos personales</h2>
+            <div class="data-container">
 
-            <p>
-                Aquí construiremos el formulario de edad, altura y peso.
-            </p>
+                <h2>Evaluación de datos</h2>
+
+                <p class="section-description">
+                    Ingresa los siguientes datos para realizar una clasificación
+                    de referencia.
+                </p>
+
+                <form id="dataForm">
+
+                    <div class="input-group">
+                        <label for="sex">Sexo</label>
+
+                        <select id="sex" required>
+                            <option value="" disabled selected>
+                                Selecciona una opción
+                            </option>
+
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="age">Edad</label>
+
+                        <input type="number" id="age" placeholder="Ejemplo: 20" min="18" max="120" required>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="height">Altura (cm)</label>
+
+                        <input type="number" id="height" placeholder="Ejemplo: 175" min="50" max="250" step="0.1"
+                            required>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="weight">Peso (kg)</label>
+
+                        <input type="number" id="weight" placeholder="Ejemplo: 70" min="20" max="300" step="0.1"
+                            required>
+                    </div>
+
+
+                    <button type="submit" class="main-button">
+                        Analizar datos
+                    </button>
+
+                </form>
+
+
+                <div id="dataResult" class="result-card">
+
+                    <div id="resultSymbol" class="result-symbol"></div>
+
+                    <h3 id="resultTitle"></h3>
+
+                    <p id="resultText"></p>
+
+                </div>
+
+            </div>
         </section>
 
 
         <section id="corazon" class="section">
-            <h2>Corazón 3D</h2>
 
-            <p>
-                Aquí aparecerá nuestro corazón construido en 3D.
-            </p>
+            <div class="heart-container">
+
+                <h2>Corazón</h2>
+
+                <p class="heart-description">
+                    Explora el corazón y descubre lo que se encuentra en su interior.
+                </p>
+
+
+                <!-- Área donde aparecerá el corazón 3D -->
+
+                <div id="heartScene" class="heart-scene"></div>
+
+
+                <!-- Controles -->
+
+                <div class="heart-controls">
+
+                    <p>Color del corazón</p>
+
+                    <div class="color-buttons">
+
+                        <button id="blueHeartButton" class="heart-color-button active">
+                            Azul
+                        </button>
+
+                        <button id="purpleHeartButton" class="heart-color-button">
+                            Morado
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <p class="heart-instruction">
+                   Explora el corazón con el mouse
+                </p>
+
+            </div>
+
         </section>
 
 
