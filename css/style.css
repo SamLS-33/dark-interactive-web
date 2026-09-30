@@ -92,3 +92,124 @@ main {
 .section h2 {
     color: #4da6ff;
 }
+
+/* =========================
+   LOGIN
+   ========================= */
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    background-color: #080d14;
+
+    border: 1px solid #123d6b;
+    border-radius: 12px;
+
+    box-shadow: 0 0 25px rgba(18, 61, 107, 0.25);
+}
+
+
+.login-container h2 {
+    margin-bottom: 30px;
+}
+
+
+.input-group {
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #9ecbff;
+}
+
+
+.input-group input {
+    width: 100%;
+
+    padding: 12px;
+
+    background-color: #05070a;
+
+    color: white;
+
+    border: 1px solid #123d6b;
+    border-radius: 6px;
+
+    outline: none;
+}
+
+
+.input-group input:focus {
+    border-color: #2d8cff;
+
+    box-shadow: 0 0 8px rgba(45, 140, 255, 0.25);
+}
+
+
+.main-button,
+.secondary-button {
+    padding: 11px 20px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.main-button {
+    width: 100%;
+
+    background-color: #0b3157;
+
+    color: white;
+
+    border: 1px solid #2d8cff;
+}
+
+
+.main-button:hover {
+    background-color: #124a7d;
+}
+
+
+.secondary-button {
+    background-color: transparent;
+
+    color: #4da6ff;
+
+    border: 1px solid #123d6b;
+}
+
+
+.secondary-button:hover {
+    background-color: #071a2e;
+}
+
+
+.register-text {
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+    color: #888;
+}
+
+
+#loginMessage {
+    margin-top: 20px;
+
+    min-height: 20px;
+}

@@ -35,11 +35,59 @@
         </section>
 
 
-        <section id="login" class="section">
-            <h2>Iniciar sesión</h2>
+<section id="login" class="section">
 
-            <p>Próximamente construiremos el sistema de Login.</p>
-        </section>
+    <div class="login-container">
+
+        <h2>Iniciar sesión</h2>
+
+        <form id="loginForm">
+
+            <div class="input-group">
+                <label for="username">Usuario</label>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Escribe tu usuario"
+                    required
+                >
+            </div>
+
+
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Escribe tu contraseña"
+                    required
+                >
+            </div>
+
+
+            <button type="submit" class="main-button">
+                Iniciar sesión
+            </button>
+
+        </form>
+
+
+        <p id="loginMessage"></p>
+
+
+        <p class="register-text">
+            ¿No tienes una cuenta?
+        </p>
+
+        <button id="registerButton" class="secondary-button">
+            Registrarse
+        </button>
+
+    </div>
+
+</section>
 
 
         <section id="datos" class="section">
