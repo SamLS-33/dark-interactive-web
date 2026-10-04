@@ -188,7 +188,7 @@
 
 
                 <p class="heart-instruction">
-                   Explora el corazón con el mouse
+                    Explora el corazón con el mouse
                 </p>
 
             </div>
@@ -203,11 +203,34 @@
                 Aquí construiremos nuestra simulación visual.
             </p>
         </section>
+        <section id="mensaje-prueba" class="section">
+
+            <div class="heart-container">
+
+                <h2>Mensaje 3D</h2>
+
+                <p class="heart-description">
+                    Prueba del mensaje oculto.
+                </p>
+
+                <div id="messageScene" class="heart-scene"></div>
+
+            </div>
+
+        </section>
+        <button class="nav-button" data-section="mensaje-prueba">
+            Mensaje 3D
+        </button>
 
     </main>
-
-
-    <script src="js/script.js"></script>
+    <script type="importmap">
+{
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+    }
+}
+</script>
+    <script type="module" src="js/script.js"></script>
 
 </body>
 
